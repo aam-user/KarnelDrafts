@@ -21,7 +21,7 @@ int molt(int n1, int n2)
 int sott(int n1, int n2)
 {
 	int s;
-	s = n1 - n2;
+	return s = n1 - n2;
 }
 int somma(int n1, int n2)
 {
@@ -41,20 +41,20 @@ int main()
 	printf("4. Addizionne\n");
 	scanf("%d", &l);
 	switch (l){
-		case 1: 
+		case 1:
 			scanf("%d", &x);
 			scanf("%d", &y);
 			mol = molt(x, y);
 			printf("MOlt = %d\n", mol);
 			break;
-		
+
 		case 2:
 			scanf("%d", &x);
 			scanf("%d", &y);
 			div = divi(x, y);
 			printf("%d", div);
 			break;
-		
+
 		case 3:
 			scanf("%d", &x);
 			scanf("%d", &y);
@@ -67,7 +67,7 @@ int main()
 			som = somma(x, y);
 			printf("%d", som);
 			break;
-			
+
 		default:
 		printf("Il numero deve essere da 1 a 4");
 	}
