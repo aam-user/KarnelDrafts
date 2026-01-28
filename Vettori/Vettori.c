@@ -16,9 +16,7 @@ void stampaVet(int vet[], int dim){
 }
 
 int cercaMax(int vet[], int dim){
-	int i;
-	double max;
-	max=vet[0];
+	int i, max=vet[0];
 	for(i=1;i<dim;i++){
 		if(max<vet[i]){
 			max=vet[i];
