@@ -23,4 +23,6 @@ Vscode Shortcut {
 
 	(8)	Write in More line at ones
 		Alt + Ctrl + Down/Up Arrow
+
+	(8) F5 to Debug
 }

@@ -85,7 +85,7 @@ int main() {
 
         switch (nMenu) {
             case 1:
-           	    printf("Massimo e: %d\n Minimo e: %d ",cercaMax(vet,n), cercaMin(vet,n) );
+           	    printf("Massimo e: %d\nMinimo e: %d ",cercaMax(vet,n), cercaMin(vet,n) );
                 break;
 
             case 2:
