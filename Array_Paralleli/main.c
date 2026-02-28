@@ -1,22 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 50
-int matricola[MAX], voto[MAX], num;
+int matricola[MAX], voto[MAX];
+int totale = 0;
 void carica_studenti(){
-  int i;
+  int i, nuovi;
   printf("Qanti studenti vuoi caricare: ");
-  scanf("%d", &num);
-  for(i=0;i<num;i++){
+  scanf("%d", &nuovi);
+    if (nuovi <= 0) {
+        printf("Numero non valido\n");
+        return;
+    }
+
+    if (totale + nuovi > MAX) {
+        printf("Superi il limite massimo\n");
+        return;
+    }
+  for(i = totale; i < totale + nuovi; i++){
     printf("Inserisci matricola dell studente: ");
     scanf("%d", &matricola[i]);
     printf("Inserisci Voto: \n");
     scanf("%d", &voto[i]);
 }
+  totale = totale + nuovi;
 }
 
 void stampa_dati (){
     int i;
-    for(i=0;i<num;i++){
+    if (totale == 0) {
+    printf("Nessuno studente caricato\n");
+    return;
+}
+    for(i=0;i<totale;i++){
     printf("Matricola: %d", matricola[i]);
     printf(" Voto: %d\n", voto[i]);
     }
@@ -58,7 +73,7 @@ int main(){
     if (scelta != 0) {
             printf("\t\nPremi INVIO per continuare...\n");
             getchar(); // Mangia l'invio dello scanf
-            //getchar(); // Aspetta la pressione di un tasto
+            getchar(); // Aspetta la pressione di un tasto
             system("clear"); // Comando Linux per pulire lo schermo
     }
     } while(scelta != 0);
