@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Zelvoc</h1>
 <h3 align="center">A passionate developer from BD</h3>
 
-- 🌱 I’m currently learning **C**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
