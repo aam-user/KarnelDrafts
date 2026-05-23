@@ -67,7 +67,7 @@ int main() {
     int vet[n]; // ho definito il vettore di n numeri
     leggiVet(vet,n); //carica vettore
     getchar();
-    system("clear");
+    system("CLS");
 
     do {
         printf("\t\n**************************************************\n");
@@ -112,7 +112,7 @@ int main() {
             printf("\t\nPremi INVIO per continuare...\n");
             getchar(); // Mangia l'invio dello scanf
             getchar(); // Aspetta la pressione di un tasto
-            system("clear"); // Comando Linux per pulire lo schermo
+            system("CLS"); // Comando Windows per pulire lo schermo
         }
 
     } while (nMenu != 5);
